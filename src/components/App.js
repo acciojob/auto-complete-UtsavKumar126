@@ -7,7 +7,7 @@ const App = () => {
   const[fruitsArr,setFruitsArr]=useState(fruits);
   function findFruits(e){
     if(e==="")setFruitsArr(fruits);
-    setFruitsArr(fruitsArr.filter(ele=>ele.indexOf(e)>-1));
+    setFruitsArr(fruits.filter(ele=>ele.indexOf(e)!=-1));
   }
   return (
     <div>
